@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221122092706">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221122113001">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,42 +26,27 @@
 					</button>
 					<nav class="menu__body">
 						<ul class="menu__list">
+							<li class="menu__item"></li>
 							<li class="menu__item">
-								<div data-spollers class="spollers">
-									<div class="spollers__item">
-										<button type="button" data-spoller class="spollers__title menu__link">
-											Menu
-										</button>
-										<div class="spollers__body">
-											<ul class="spollers__list">
-												<li>
-													<a data-goto="#about-us-block" href="#about-us-block" class="menu__link menu__link_shift">About</a>
-												</li>
-												<li>
-													<a data-goto="#how-it-works-block" href="#how-it-works-block" class="menu__link menu__link_shift">How</a>
-												</li>
-												<li>
-													<a data-goto="#dish-of-day-block" href="#dish-of-day-block" class="menu__link menu__link_shift">Dishes</a>
-												</li>
-												<li>
-													<a href="#social" class="menu__link menu__link_shift">Social</a>
-												</li>
-												<li>
-													<a data-goto="#contacts" href="#contacts" class="menu__link menu__link_shift">Contacts</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								<a data-goto="#dish-of-day-block" data-goto-header href="#" class="menu__link">Menu</a>
 							</li>
 							<li class="menu__item">
-								<a data-goto="#recipes" href="#recipes" class="menu__link">Recipes</a>
+								<a data-goto="#about-us-block" data-goto-header href="#" class="menu__link">About</a>
 							</li>
 							<li class="menu__item">
-								<a data-goto="#chefs" href="#chefs" class="menu__link">Chefs</a>
+								<a data-goto="#how-it-works-block" data-goto-header href="#" class="menu__link">How</a>
 							</li>
 							<li class="menu__item">
-								<a data-goto="#contacts" href="#contacts" class="menu__link">Contacts</a>
+								<a data-goto="#recipes" data-goto-header href="#recipes" class="menu__link">Recipes</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto="#chefs" data-goto-header href="#chefs" class="menu__link">Chefs</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto="#social" data-goto-header href="#" class="menu__link">Social</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto="#contacts" data-goto-header href="#contacts" class="menu__link">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -485,45 +470,46 @@
 									<picture><source srcset="img/recipes/01.webp" type="image/webp"><img src="img/recipes/01.png" alt="pic" /></picture>
 								</div>
 								<div class="recipes__content">
-									<a href="#" class="recipes__button recipes__button_content">breakfast</a>
-									<p class="recipes__date-left-block">05 Jul 2016</p>
+									<a data-goto="#top" href="#" class="recipes__button recipes__button_content">breakfast</a>
+									<p class="recipes__date-left-block">05 Jul 2022</p>
 									<p class="recipes__text-left-block">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										Ex consequuntur debitis laudantium tenetur reiciendis.
 									</p>
 									<p class="recipes__author">Jason Keller</p>
 									<div class="recipes__footer-left-block">
-										<a href="#" class="recipes__views-left-block">275</a>
-										<a href="#" class="recipes__comments-left-block">12</a>
+										<a data-goto="#top" href="#" class="recipes__views-left-block">275</a>
+										<a data-goto="#top" href="#" class="recipes__comments-left-block">12</a>
 									</div>
 								</div>
-								<a href="#" class="recipes__link"></a>
+								<a data-goto="#top" href="#" class="recipes__link"></a>
 							</div>
 							<div class="recipes__meals">
 								<div class="recipes__meal">
 									<p class="recipes__text-meal">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut
+										Repudiandae officia cumque adipisci vitae nobis quibusdam.
+										Inventore, similique corrupti sit amet consectetur
+										adipisicing elit.
 									</p>
 									<div class="recipes__footer">
 										<div class="recipes__left-footer">
-											<a href="#" class="recipes__button">lunch</a>
-											<p class="recipes__date">07 Jan 2016</p>
+											<a data-goto="#top" href="#" class="recipes__button">lunch</a>
+											<p class="recipes__date">07 05 Jul</p>
 										</div>
 										<div class="recipes__rigth-footer">
-											<a href="#" class="recipes__views">275</a>
-											<a href="#" class="recipes__comments">12</a>
+											<a data-goto="#top" href="#" class="recipes__views">275</a>
+											<a data-goto="#top" href="#" class="recipes__comments">12</a>
 										</div>
 									</div>
 								</div>
 								<div class="recipes__meal">
 									<p class="recipes__text-meal">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut
+										Quaerat nesciunt placeat, neque eveniet commodi delectus
+										quibusdam ducimus illo obcaecati nostrum?
 									</p>
 									<div class="recipes__footer">
 										<div class="recipes__left-footer">
 											<a href="#" class="recipes__button">dinner</a>
-											<p class="recipes__date">07 Jan 2016</p>
+											<p class="recipes__date">07 Jul 2022</p>
 										</div>
 										<div class="recipes__rigth-footer">
 											<a href="#" class="recipes__views">275</a>
@@ -533,13 +519,13 @@
 								</div>
 								<div class="recipes__meal">
 									<p class="recipes__text-meal">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut
+										Pariatur praesentium mollitia voluptas autem possimus at
+										laudantium distinctio sit cumque.
 									</p>
 									<div class="recipes__footer">
 										<div class="recipes__left-footer">
 											<a href="#" class="recipes__button">sweets</a>
-											<p class="recipes__date">07 Jan 2016</p>
+											<p class="recipes__date">07 Jul 2022</p>
 										</div>
 										<div class="recipes__rigth-footer">
 											<a href="#" class="recipes__views">275</a>
@@ -560,44 +546,44 @@
 							<div class="social__item">
 								<div class="social__header-item">
 									<div class="social__left-header">
-										<a class="social__icon-link" href="#"><img src="img/social/twitter.svg" alt="twitter" /></a>
-										<a href="#" class="social__link">Twitter</a>
+										<a data-goto="#top" class="social__icon-link" href="#"><img src="img/social/twitter.svg" alt="twitter" /></a>
+										<a data-goto="#top" href="#" class="social__link">Twitter</a>
 									</div>
-									<a href="#" class="social__button button">follow us</a>
+									<a data-goto="#top" href="#" class="social__button button">follow us</a>
 								</div>
 								<div data-simplebar class="social__content-item">
 									<div class="social__text-content">
 										<p class="social__date">24 Jun at 16:20 pm</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Quis voluptates, delectus consequuntur reprehenderit rem
+											repellendus, atque assumenda molestiae ab et officiis
+											doloribus magni distinctio cumque!
 										</p>
 										<p class="social__email">@DennisFerguson</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Atque cumque exercitationem commodi soluta accusantium
+											beatae quidem quos dolor provident, aliquam, laudantium
+											aperiam a vitae suscipit non impedit?
 										</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Quis voluptates, delectus consequuntur reprehenderit rem
+											repellendus, atque assumenda molestiae ab et officiis
+											doloribus magni distinctio cumque!
 										</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Atque cumque exercitationem commodi soluta accusantium
+											beatae quidem quos dolor provident, aliquam, laudantium
+											aperiam a vitae suscipit non impedit?
 										</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Quis voluptates, delectus consequuntur reprehenderit rem
+											repellendus, atque assumenda molestiae ab et officiis
+											doloribus magni distinctio cumque!
 										</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Atque cumque exercitationem commodi soluta accusantium
+											beatae quidem quos dolor provident, aliquam, laudantium
+											aperiam a vitae suscipit non impedit?
 										</p>
 									</div>
 								</div>
@@ -605,84 +591,76 @@
 							<div class="social__item">
 								<div class="social__header-item">
 									<div class="social__left-header">
-										<a href="#" class="social__icon-link"><img src="img/social/instagram.svg" alt="instagram" /></a>
-										<a href="#" class="social__link">Instagram</a>
+										<a data-goto="#top" href="#" class="social__icon-link"><img src="img/social/instagram.svg" alt="instagram" /></a>
+										<a data-goto="#top" href="#" class="social__link">Instagram</a>
 									</div>
-									<a href="#" class="social__button button">follow us</a>
+									<a data-goto="#top" href="#" class="social__button button">follow us</a>
 								</div>
 								<div data-simplebar class="social__content-item">
 									<div class="social__images-content">
 										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
 										</div>
 										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
+										</div>
+										<div class="social__image-ibg">
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
 										</div>
 										<div class="social__image-ibg">
 											<a href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
 										</div>
 										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/02.webp" type="image/webp"><img src="img/social/02.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/03.webp" type="image/webp"><img src="img/social/03.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
-										</div>
-										<div class="social__image-ibg">
-											<a href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
-											<a href="#" class="social__button-image"></a>
+											<a data-goto="#top" href="#" class="social__image-link"><picture><source srcset="img/social/01.webp" type="image/webp"><img src="img/social/01.jpg" alt="pic" /></picture></a>
+											<a data-goto="#top" href="#" class="social__button-image"></a>
 										</div>
 									</div>
 									<div class="social__text-content">
 										<p class="social__date">24 Jun at 16:20 pm</p>
+
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Commodi, eius veritatis voluptatum tempore ea et aut!
+											Consequatur libero debitis illo commodi ratione harum
+											quam! sunt sequi soluta aperiam vero reiciendis! Fuga,
+											vel.
 										</p>
 										<p class="social__email">@DennisFerguson</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
-										</p>
-										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
-										</p>
-										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Aliquid aliquam rem quia, pariatur iure, aspernatur iste
+											sapiente aut nihil commodi enim totam autem animi, sunt
+											sequi soluta aperiam vero reiciendis! Fuga, vel.
 										</p>
 										<p class="social__text">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -700,34 +678,28 @@
 							<div class="social__item">
 								<div class="social__header-item">
 									<div class="social__left-header">
-										<a class="social__icon-link" href="#"><img src="img/social/facebook.svg" alt="facebook" /></a>
-										<a href="#" class="social__link">Facebook</a>
+										<a data-goto="#top" class="social__icon-link" href="#"><img src="img/social/facebook.svg" alt="facebook" /></a>
+										<a data-goto="#top" href="#" class="social__link">Facebook</a>
 									</div>
-									<a href="#" class="social__button button">follow us</a>
+									<a data-goto="#top" href="#" class="social__button button">follow us</a>
 								</div>
 								<div data-simplebar class="social__content-item">
 									<div class="social__text-content">
 										<p class="social__date">26 Jun at 16:20 pm</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Illo neque sequi officia. Exercitationem illo voluptate
+											hic quo tenetur pariatur.
+										</p>
+										<p class="social__text">
+											Fugit a labore libero repellat rerum sunt.
+											Exercitationem delectus ipsum hic, a, asperiores
+											necessitatibus doloremque blanditiis laborum numquam
+											illo ex.
 										</p>
 										<p class="social__email">@DennisFerguson</p>
 										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
-										</p>
-										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
-										</p>
-										<p class="social__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut Lorem ipsum dolor
-											sit amet, consectetur adipiscing
+											Vero rem quis dolorem amet voluptatum vel molestiae a
+											hic odio.
 										</p>
 										<p class="social__text">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -787,7 +759,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20221122092706"></script>
+	<script src="js/app.min.js?_v=20221122113001"></script>
 </body>
 
 </html>
